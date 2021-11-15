@@ -37,7 +37,9 @@ Este repositorio contiene un proyecto de desarrollo web, el cual es desarrollado
 - Sección de planes
 - Tarjetas de planes
 - Scroll horizontal con CSS
-
+- Sección de Footer
+- Media queries
+- Análisis en Lighthouse
 
 
 ## Te la explico BEM  en 5 pasos:

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)" />
 </head>
 <body>
     <header>
@@ -25,12 +26,12 @@
                     <h2>Visibilizamos todas las tasas de cambio.</h2>
                     <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
                 </div>
-                <div class="main-tables-container">
-                    <div class="main-currency-table">
+                <section class="main-tables-container">
+                  <div class="main-currency-table">
                       <p class="currency-table--title">Monedas</p>
                       <div class="currency-table--container">
-                        <table>
-                          <tr>
+                          <table>
+                              <tbody><tr>
                             <td class="table__top-left">Bitcon</td>
                             <td class="table__top-right table__right">
                               $1.96 <span class="down"></span>
@@ -50,7 +51,7 @@
                               $4.96 <span class="down"></span>
                             </td>
                           </tr>
-                        </table>
+                        </tbody></table>
                       </div>
                       <div class="currency-table--date">
                         <p><b>Actualizado:</b> 19 Julio 23:45</p>
@@ -60,7 +61,7 @@
                       <p class="commissions-table--title">Comisiones</p>
                       <div class="commissions-table--container">
                         <table>
-                          <tr>
+                          <tbody><tr>
                             <td class="table__top-left">Bitrade</td>
                             <td class="table__top-right table__right">$12.96</td>
                           </tr>
@@ -76,13 +77,13 @@
                             <td class="table__bottom-left">Coinext</td>
                             <td class="table__bottom-right table__right">$14.96</td>
                           </tr>
-                        </table>
+                        </tbody></table>
                       </div>
                       <div class="commissions-table--date">
                         <p><b>Actualizado:</b>19 Julio 23:48</p>
                       </div>
                     </div>
-                  </div>
+                  </section>
                 </section>
                 <!--tarjetas de beneficios-->
             <section class="main-product-detail">
@@ -91,7 +92,7 @@
                   <h2>Creamos un producto sin comparación.</h2>
                   <p>Confiable y diseñado para su uso diario.</p>
             </div>
-            <section class="product-cards--contanier">
+            <section class="product-cards--container">
                 <article class="product-detail--card">
                     <span class="clock"></span>
                     <p class="product--card-title"> Tiempo real</p>
@@ -122,27 +123,18 @@
                     su contenido miesntras se actualizan.
                   </p>
                 </article>
+              </div>
             </section>
             <section class="bitcoin-img-container">
               <h2>Conócelo hoy.</h2>
             </section>
-            <!--plans-->
+            <!--plans /* BENEFICIOS */-->
             <section id="plans" class="main-plans-container">
-              <div class="plans--title"></div>
+              <div class="plans--title">
               <h2>Escoge el plan que mejor se ajuste a ti.</h2>
               <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
               <section class="plans-container--slider">
-                <div class="plans-container--card">
-                  <div class="plan-card">
-                    <h3 class="plan-card--title">Pago Anual</h3>
-                    <p class="plan-card--price"><span>$</span> 99</p>
-                    <p class="plan-card--saving">
-                      *Ahorras $129 comparado el plan mensual.
-                    </p>
-                    <button class="plan-card--ca">Escoger este <span></span></button>
-                  </div>
-                </div>
                 <div class="plans-container--card">
                   <p class="recommended">Recomendado</p>
                   <div class="plan-card">
@@ -155,6 +147,7 @@
                   </div>
                 </div>
                 <div class="plans-container--card">
+                  <p class="recommended-label--intermedio">Intermedio</p>
                   <div class="plan-card">
                     <h3 class="plan-card--title">Pago Anual</h3>
                     <p class="plan-card--price"><span>$</span> 99</p>
@@ -164,9 +157,20 @@
                     <button class="plan-card--ca">Escoger este <span></span></button>
                   </div>
                 </div>
-              </section>
+                <div class="plans-container--card">
+                  <p class="recommended-label--basico">Básico</p>
+                  <div class="plan-card">
+                    <h3 class="plan-card--title">Pago Anual</h3>
+                    <p class="plan-card--price"><span>$</span> 19</p>
+                    <p class="plan-card--saving">
+                      *Ahorras $129 comparado el plan mensual.
+                    </p>
+                    <button class="plan-card--ca">Escoger este <span></span></button>
+                  </div>
+                </div>
             </section>
           </main>
+          <!--plans-->
           <footer>
             <section class="left">
               <ul>
@@ -176,7 +180,7 @@
               </ul>
             </section>
             <section class="right">
-              <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit 2020" />
+              <img src="./assets/imgs/logo-footer.svg" alt="Logo Batatabit 2020" />
             </section>
         
           </footer>

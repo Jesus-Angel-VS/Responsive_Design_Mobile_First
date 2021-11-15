@@ -133,6 +133,24 @@ main {
   line-height: 2.6rem;
   color: var(--black);
 }
+.main-tables-container {
+  display: flex;
+  /* gap: 50px; Aun no está soportado por todos los navegadores :( */
+  height: 400px;
+  padding: 1rem 0;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  overflow-y:hidden 
+}
+.main-tables-container {
+  scroll-snap-align: center;
+  padding: 0 16px;
+  margin: 25px 30px 10px 30px;
+}
+.main-tables-container {
+  margin-left: 70px;
+}
 .main-exchange-container p {
   margin-bottom: 30px;
   font-size: 1.4rem;
@@ -145,7 +163,7 @@ main {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
-  height: 360px;
+  height: 400px;
   margin: 0 auto;
 
   font-family: "Inter", sans-serif;
@@ -358,6 +376,7 @@ main {
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
+  text-align: center;
 }
 /*plans*/
 .main-plans-container {
@@ -365,7 +384,15 @@ main {
   min-height: 320px;
   padding-bottom: 70px;
   text-align: center;
+  background-color: #fff;
 }
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px; 
+}  
 .plans--title h2 {
   padding-top: 50px;
   font-size: 2.4rem;
@@ -380,6 +407,8 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+/* BENEFICIOS */
+/* ETIQUETA 1 */
 .plans-container--slider {
   display: flex;
   /* gap: 50px; Aun no está soportado por todos los navegadores :( */
@@ -387,6 +416,7 @@ main {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  overflow-y:hidden 
 }
 .plans-container--card {
   position: relative;
@@ -395,7 +425,8 @@ main {
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px 30px 0;
+ /* margin: 50px 30px 0;*/
+  margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -449,6 +480,143 @@ main {
   background-image: url("./assets/icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
 }
+/* ETIQUETA 2 */
+.plans-container--card {
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 18px 0;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.recommended-label--intermedio {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  background-color: var(--secondary-blue);
+  border-radius: 8px;
+  color: var(--just-white);
+}
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+.plan-card--price {
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: black;
+}
+.plan-card--price span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: text-top;
+}
+.plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+.plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./assets/icons/orange-right-arrow.svg);
+  vertical-align: text-bottom;
+}
+/* ETIQUETA 3 */
+.plans-container--card {
+  position: relative;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.recommended-label--basico {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  background-color: var(--warm-black);
+  border-radius: 8px;
+  color: var(--just-white);
+}
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+.plan-card--price {
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: black;
+}
+.plan-card--price span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: text-top;
+}
+.plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+.plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./assets/icons/orange-right-arrow.svg);
+  vertical-align: text-bottom;
+}
+/*footer*/
 footer {
   display: flex;
   width: 100%;
@@ -461,16 +629,16 @@ footer section {
   align-items: center;
   width: 50%;
 }
-.left ul {
+footer .left ul {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   list-style: none;
 }
-.left li {
+footer.left li {
   margin: 10px 0;
 }
-.left a {
+footer .left a {
   text-decoration: none;
   color: var(--just-white);
 }

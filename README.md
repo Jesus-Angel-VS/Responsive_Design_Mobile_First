@@ -46,7 +46,7 @@ Este repositorio contiene un proyecto de desarrollo web, el cual es desarrollado
 
 - BEM significa (Bloque, Elemento y Modificador)
 - El bloque puede ser el main, section o incluso el article
-- El elemento es un <a>, <p>, <h2>, etc.
-- El modificador es lo que lo diferencia de otro elemento. Por ejemplo, un <p> puede tener el fondo verde mientras que otro <p> puede tener el fondo azul.
+- El elemento es un "a", "p", "h2", etc.
+- El modificador es lo que lo diferencia de otro elemento. Por ejemplo, un "p" puede tener el fondo verde mientras que otro "p" puede tener el fondo azul.
 - Se dividen por guiones bajos. Cuando es el elemento se usan 2 guiones bajos y en el modificador se usa un solo guion bajo.
 - Ejemplo: main__a_background-red, main-section__p_float
